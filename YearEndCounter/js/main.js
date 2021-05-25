@@ -26,11 +26,12 @@ const updateCountdown = () => {
 document.getElementById("start").onclick = startCounter
 
 function startCounter() {
-  id = setInterval(updateCountdown,1000)
+  if(id === undefined) id = setInterval(updateCountdown,1000)
 }
 
 document.getElementById("stop").onclick = stopCounter
 
 function stopCounter() {
   clearInterval(id);
+  id = undefined;
 }
