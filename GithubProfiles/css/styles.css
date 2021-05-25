@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: rgb(16, 169, 230);
+  background: linear-gradient(to right, rgb(191, 204, 209), rgb(16, 169, 230));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100vh;
+}
+
+input {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05);
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+input::placeholder {
+  color: black;
+  position: relative;
+}
+
+button {
+  font-size: 0.9rem;
+  border-radius: 2px solid black;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.user-card {
+  background: rgb(2, 142, 197);
+  background: linear-gradient(to right, rgb(191, 204, 209), rgb(2, 142, 197));
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  padding: 3rem;
+  max-width: 800px;
+}
+
+.avatar {
+  border: 10px solid black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  margin-left: 2rem;
+}
+
+.user-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  max-width: 100px;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.error {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: red;
+}
