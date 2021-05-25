@@ -20,7 +20,9 @@ const displayPokemon = (pokemon) => {
     pokemonEl = document.createElement("div");
     pokemonEl.classList.add("pokemon");
     const {id, name, sprites, types } = pokemon;
-    pokemonHTML = `<span>${id}</span><img class="img-container" src = "${sprites.front_default}"></img>
+    pokemonHTML = `<img class="img-container" src = "${sprites.front_default}"></img>
+    <br>
+    <span>${id}</span>
     <h3 class="name">${name}</h3>
     <small class="type">${types[0].type.name}</small>`;
     pokemonEl.innerHTML = pokemonHTML
