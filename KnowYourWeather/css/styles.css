@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  background: rgb(5, 178, 246);
+  background: linear-gradient(to left, rgb(149, 220, 241), rgb(5, 178, 246));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#header h1 {
+  margin: 4rem auto 2rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: rgb(180, 76, 35);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 1rem auto;
+}
+
+#form-entries {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+#form-entries label {
+  margin-right: 0.6rem;
+}
+
+#form-entries input {
+  border: 1px solid;
+  height: 1.7rem;
+  width: 10rem;
+  margin: 1rem;
+}
+
+#submit {
+  font-size: 1rem;
+  width: 30%;
+  height: 1.5rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  left: -130px;
+  border-radius: 4px;
+}
+
+.weather-card {
+  border: 5px solid rgb(0, 67, 250);
+  border-radius: 20px;
+  padding: 1.2rem;
+  margin: 1rem;
+  font-size: large;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.01)
+}
