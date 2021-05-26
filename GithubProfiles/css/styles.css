@@ -9,15 +9,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: 'Times New Roman', Times, serif;
   min-height: 100vh;
+}
+
+.header {
+  font-size: x-large;
+  color: rgb(47, 42, 42);
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 input {
   background: white;
   border-radius: 10px;
-  border: none;
+  border: 2px solid;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05);
   font-family: inherit;
   font-size: 0.8rem;
@@ -27,8 +36,7 @@ input {
 }
 
 input::placeholder {
-  color: black;
-  position: relative;
+  color: rgb(95, 95, 95);
 }
 
 button {
@@ -44,15 +52,18 @@ button {
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 3rem;
   max-width: 800px;
 }
 
 .avatar {
-  border: 10px solid black;
+  border: 2px solid black;
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
 }
 
 .user-info {

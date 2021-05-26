@@ -4,13 +4,16 @@ const form = document.getElementById("form-container");
 const search = document.getElementById("search");
 const button = document.getElementById("button");
 const main = document.getElementById("main");
+const footer = document.getElementById("footer");
 
-const createUserCard = (user) => {
+const createUserCard = async (user) => {
   if(user.name != undefined) {
+    const repo = await fetch(user.repos_url);
+    const repoData = repo.json();
     const userCardHTML = `
     <div class="user-card">
-      <div class="avatar>
-        <img src="${user.avatar_url}" alt="${user.name} Github Avatar"/>
+      <div>
+        <img src="${user.avatar_url}" class="avatar" alt="${user.name} Github Avatar"></img>
       </div>
       <div class="user-info">
         <h2>${user.name}</h2>
@@ -22,7 +25,6 @@ const createUserCard = (user) => {
           <li><strong>Twitter ID : </strong>${user.twitter_username}</li>
           <li><strong>Location : </strong>${user.location}</li>
         </ul>
-        <div id="repos"></div>
       </div>
     </div>
     `;
@@ -44,12 +46,21 @@ const getUser = async (user) => {
   createUserCard(responseData);
 }
 
-
-button.addEventListener("click", (e) => {
+button.onclick = (e) => {
   e.preventDefault();
   const user = search.value;
   if(user != "") {
     getUser(user);
     search.value = "";
   }
-} )
+}
+
+button.onmouseover = (e) => {
+  e.preventDefault()
+  button.style.background = "rgb(2, 142, 197)";
+}
+
+button.onmouseout = (e) => {
+  e.preventDefault()
+  button.style.background = "rgb(255, 255, 255)";
+}
