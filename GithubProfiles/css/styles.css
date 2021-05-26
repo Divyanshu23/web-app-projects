@@ -47,6 +47,7 @@ button {
 }
 
 .user-card {
+  margin-top: 2rem;
   background: rgb(2, 142, 197);
   background: linear-gradient(to right, rgb(191, 204, 209), rgb(2, 142, 197));
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
