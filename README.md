@@ -1,4 +1,4 @@
-## Year End Counter
+## IIEP Projects
 
 The following project is a counter which counts the number of days, hours, minutes and seconds which are left for the end of the year 2021.
 
