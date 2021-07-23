@@ -1,9 +1,8 @@
-## IIEP Projects
+## Javascript Web Applications
 
-The following project is a counter which counts the number of days, hours, minutes and seconds which are left for the end of the year 2021.
+The repo contains the code for several Web Applications that I have developed. All of them are liste below:-
 
-The project is developed using the following technologies:-
-
-1) HTML5
-2) CSS
-3) Javascript
+- **YearEndCounter** - A Web App that counts the the time remaining for the end of the current year w.r.t to the current time of the user.
+- **PokeDex** - A Web App that calls PokeDex API and requests detaisl of 100 Pokemon and displays them in a style on push of a button.
+- **GitHub Profiles** - A Web App that is able to show details of a person's Github account be searching the username in seach box.
+- **Know Your Weather** - A Web App that is able to accurately show the weather of the a city entered by user.
